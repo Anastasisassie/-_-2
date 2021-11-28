@@ -1,0 +1,1 @@
+#include <iostream>#include <cmath>using namespace std;bool prost(int m) {    int k = 0;    for (int i = 2; i <= sqrt(m); i++)        if (m % i == 0) k++;    return k == 0;}int main() {    int a, b;    cin >> a >> b;    for (int i = a; i <= b; i++)        if (prost(i)) cout << i << " ";    return 0;}
